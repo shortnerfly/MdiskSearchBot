@@ -105,11 +105,12 @@ async def message_handler(event):
             answer = f'''** Sorry {event.sender.first_name} No Results Found For {event.text}**
 
 **Please check the spelling on** [Google](http://www.google.com/search?q={event.text.replace(' ', '%20')}%20Movie) 🔍
-**Click On The Help To Know How To Watch**
     '''
 
-            newbutton = [Button.url('Help🙋',
-                                    f'https://t.me/postsearchbot?start=Watch')]
+            newbutton = [Button.url('Backup Channel🙋',
+                                    f'https://t.me/movieshubchannell')]
+            newbutton = [Button.url('How To Watch ❓',
+                                    f'https://t.me/bollywoodmoviereqwatch')]
 
             await txt.delete()
             result = await event.reply(answer, buttons=newbutton, link_preview=False)
@@ -132,7 +133,7 @@ async def message_handler(event):
         message = f'**Click Here 👇 For "{event.text}"**\n\n[🍿🎬 {str(event.text).upper()}\n🍿🎬 {str("Click me for results").upper()}]({tgraph_result})'
 
         newbutton = [Button.url('How To Watch ❓',
-                                    f'https://t.me/postsearchbot?start=Watch')]
+                                    f'https://t.me/bollywoodmoviereqwatch')]
 
         await txt.delete()
         await asyncio.sleep(0.5)
@@ -144,7 +145,7 @@ async def message_handler(event):
     except Exception as e:
         print(e)
         await txt.delete()
-        result = await event.reply("I am Unable Search,Please Search In @PostSearchBOT🙏")
+        result = await event.reply("I am Unable Search,Please Search In @mdisk_terabox_bot🙏")
         await asyncio.sleep(Config.AUTO_DELETE_TIME)
         await event.delete() 
         return await result.delete()
