@@ -109,8 +109,7 @@ async def message_handler(event):
 
             newbutton = [Button.url('Backup Channel🙋',
                                     f'https://t.me/movieshubchannell')]
-            newbutton = [Button.url('How To Watch ❓',
-                                    f'https://t.me/bollywoodmoviereqwatch')]
+
 
             await txt.delete()
             result = await event.reply(answer, buttons=newbutton, link_preview=False)
