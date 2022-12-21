@@ -14,7 +14,7 @@ class Config(object):
     BOT_USERNAME = os.getenv("BOT_USERNAME", "mdisk_terabox_bot")
     BOT_OWNER = int(os.getenv("BOT_OWNER", "5178267455"))
 #    OWNER_USERNAME = os.getenv("OWNER_USERNAME", "cyniteSupport")
-    BACKUP_CHANNEL = os.getenv("BACKUP_CHANNEL", "movieshubchannell")
+    BACKUP_CHANNEL = os.getenv("BACKUP_CHANNEL", "bollywoodmoviereqwatch")
 #    GROUP_USERNAME = os.getenv("GROUP_USERNAME")
     START_MSG = os.getenv("START_MSG", """**Hᴇʏ {}, 
 
@@ -34,7 +34,7 @@ Jᴜsᴛ Tʏᴘᴇ ᴀ Mᴏᴠɪᴇ Nᴀᴍᴇ 🎬**""" )
     LOG_CHANNEL = int(os.getenv("LOG_CHANNEL", "-1001719723104"))
     RESULTS_COUNT = int(os.getenv("RESULTS_COUNT", 20))
     BROADCAST_AS_COPY = os.getenv("BROADCAST_AS_COPY", "True")
-    UPDATES_CHANNEL_USERNAME = os.getenv("UPDATES_CHANNEL_USERNAME", "bollywoodmoviereqwatch")
+    UPDATES_CHANNEL_USERNAME = os.getenv("UPDATES_CHANNEL_USERNAME", "movieshubchannell")
     FORCE_SUB = os.getenv("FORCE_SUB", "False")
     AUTO_DELETE_TIME = int(os.getenv("AUTO_DELETE_TIME", 3600))
     MDISK_API = os.getenv("MDISK_API", "Qu7jX9V0Sn3q1JHdxjPp")
